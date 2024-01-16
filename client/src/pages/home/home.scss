@@ -1,0 +1,462 @@
+.home {
+  background: #ffffff;
+  // color: #000000;
+
+  .banner {
+    background: #0bb791;
+    padding: 4% 5% 2%;
+    display: flex;
+    flex-direction: row;
+
+    .first {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: #ffffff;
+      flex: 1;
+      padding: 5% 2% 0;
+
+      .head {
+        line-height: 1.2;
+        font-size: 60px;
+        text-align: unset;
+        font-style: normal;
+        font-weight: 700;
+        font-family: "League Spartan", sans-serif;
+      }
+
+      .cnt {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+      }
+
+      .banner-btns-span {
+        display: flex;
+        gap: 15px;
+
+        .banner-btns {
+          outline: none;
+          border: none;
+          resize: none;
+          padding: 10px 25px;
+          width: 170px;
+          text-align: left;
+          border-radius: 8px;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 23px;
+        }
+        .demo {
+          background-color: #0bb791;
+          border: 1px solid #ffffff;
+          color: #ffffff;
+        }
+        .demo:hover {
+          background-color: #0d170a;
+          border: none;
+        }
+      }
+    }
+
+    .sec {
+      flex: 1;
+
+      video {
+        border-radius: 16px;
+        height: 540px;
+      }
+    }
+  }
+
+  .brands-parent {
+    background-color: #fef2f2;
+
+    .brands {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 70px;
+      background-color: #fef2f2;
+
+      .brand-logos {
+        animation: moveLeft 30s linear infinite;
+        opacity: 0.8;
+      }
+    }
+    @keyframes moveLeft {
+      from {
+        transform: translateX(100%); /* Start off-screen to the right */
+      }
+      to {
+        transform: translateX(-100%); /* Move to the left */
+      }
+    }
+  }
+
+  .trading-steps {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 5%;
+    gap: 20px;
+    background: #fefbf5;
+
+    .first {
+      width: 40%;
+
+      .stock-img {
+        width: 500px;
+        opacity: 0.7;
+      }
+    }
+
+    .sec {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .top {
+        line-height: 1.2;
+        font-size: 40px;
+        text-align: unset;
+        font-style: normal;
+        font-weight: 700;
+        font-family: "League Spartan", sans-serif;
+      }
+
+      .bottom {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        .steps {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          .icon {
+            color: #0bb791;
+            font-size: 35px;
+          }
+          .heading {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .start-investing-btn {
+        width: 180px;
+        border: none;
+        outline: none;
+        background: #0bb791;
+        padding: 10px 0px;
+        border-radius: 8px;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 17px;
+      }
+    }
+  }
+
+  .advanced-Trading-parent {
+    margin-top: 20px;
+    padding: 1% 5% 5%;
+
+    .advanced-Trading {
+      background: #0bb791;
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+
+      .first {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 5%;
+        color: #ffffff;
+
+        .heading {
+          line-height: 1.2;
+          font-size: 40px;
+          text-align: unset;
+          font-style: normal;
+          font-weight: 700;
+          font-family: "League Spartan", sans-serif;
+        }
+
+        .cnt {
+          font-weight: 400;
+        }
+
+        .advanced-Trading-btn {
+          width: 280px;
+          border: none;
+          outline: none;
+          background: #ffffff;
+          padding: 10px 0px;
+          border-radius: 8px;
+          font-weight: 500;
+          color: #0bb791;
+          font-size: 15px;
+        }
+      }
+      .sec {
+        .ad-stocks {
+          width: 600px;
+        }
+      }
+    }
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5% 5% 2%;
+    background: #fefbf5;
+
+    .product-flex {
+      display: flex;
+      justify-content: space-between;
+
+      .product-box {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        background: #0bb791;
+        border-radius: 8px;
+
+        .product-img {
+          height: 350px;
+          max-width: 100%;
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px;
+        }
+
+        .bottom {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          color: #ffffff;
+          padding: 20px;
+
+          .heading {
+            font-size: 1.25rem;
+            font-weight: 700;
+          }
+
+          .cnt {
+            font-size: 1rem;
+          }
+
+          .learn-more-btn {
+            width: 120px;
+            border: none;
+            outline: none;
+            background: #ffffff;
+            padding: 10px 0px;
+            border-radius: 8px;
+            font-weight: 500;
+            color: #0bb791;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .features {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+
+    .first {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .head1 {
+        line-height: 1.2;
+        font-size: 50px;
+        text-align: unset;
+        font-style: normal;
+        font-weight: 900;
+        font-family: "League Spartan", sans-serif;
+      }
+      .cnt {
+        font-size: 1rem;
+      }
+
+      .flex {
+        display: flex;
+        justify-content: space-between;
+
+        .feature {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 50%;
+
+          .icon {
+            font-size: 40px;
+            color: #0bb791;
+          }
+          .head {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .sec {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .secured-img {
+      }
+    }
+  }
+
+  .tab {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 5%;
+    background: #fefbf5;
+    width: 100%;
+
+    .tab-btns {
+      margin: 0 auto;
+      .btn1 {
+        border: 1px solid #0bb791;
+        padding: 5px 10px;
+        color: #0bb791;
+        background: transparent;
+        font-size: 17px;
+        font-weight: 400;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+      }
+      .btn2 {
+        border: 1px solid #0bb791;
+        padding: 5px 10px;
+        color: white;
+        background: #0bb791;
+        font-size: 17px;
+        font-weight: 400;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 15px;
+      justify-content: flex-start;
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
+
+      .packages {
+        background: #ffffff;
+        // color: #ffffff;
+        width: calc(33.33% - 15px);
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 3% 0;
+        border: 1px solid #0bb791;
+        box-shadow: 0 0 30px #00000021;
+        border-radius: 8px;
+
+        .head {
+          margin: 0 auto;
+          font-weight: 700;
+          font-size: 30px;
+        }
+
+        .pips {
+          height: 100px;
+          font-size: 25px;
+          font-weight: 600;
+          color: #ffffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: radial-gradient(
+            circle at 10% 20%,
+            rgb(15, 213, 172) 0%,
+            rgb(34, 182, 198) 100.2%
+          );
+        }
+
+        .get-started-btn {
+          width: 100px;
+          margin: 0 auto;
+          color: #0bb791;
+          background: #fef2f2;
+          font-size: 17px;
+          font-weight: 500;
+          border: none;
+          padding: 5px;
+          border-radius: 8px;
+          border: 1px solid #000000;
+        }
+
+        .package-benefits {
+          display: flex;
+          padding: 1% 2%;
+          flex-direction: column;
+          gap: 7px;
+
+          span {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  .final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    gap: 40px;
+    background: #0bb791;
+    color: #ffffff;
+    text-align: center;
+
+    .head {
+      line-height: 1.2;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      font-family: "League Spartan", sans-serif;
+    }
+    .cnt {
+      font-size: 25px;
+      font-weight: 400;
+      width: 60%;
+    }
+    .users {
+      color: #d4b68a;
+      line-height: 1.2;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 700;
+    }
+    .reg {
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      font-family: "League Spartan", sans-serif;
+    }
+  }
+}

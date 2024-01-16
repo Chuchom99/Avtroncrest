@@ -1,0 +1,243 @@
+
+.footer{
+    margin-top: 40px;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: "League Spartan", sans-serif;
+    gap: 30px;
+    a{
+        color: #000000;
+        text-decoration: none;
+    }
+    .w-span{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        opacity: .6;
+        color: #000000;
+
+    }
+    .f-footer-lg{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .f-header{
+            font-weight: 600;
+            font-size: 13px;
+            color: #000000;
+            opacity: 9;
+            filter: brightness(1.2);
+        }
+        .f-table-span{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            opacity: .6;
+            color: #000000;
+        }
+
+        .f-btn-div{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            
+            .logo{
+                max-width: 200px;
+            }
+
+            .f-b-btn-div{
+                display: flex;
+                gap: 12px;  
+                
+                .f-b-btn{
+                    align-items: center;
+                    background: transparent;
+                    border: 1px solid #0d170a;
+                    padding: 10px;
+                    font-weight: bold;
+                    font-size: 17px;
+                    border-radius: 12px;
+                    color: #222121;
+                    cursor: pointer;
+                }
+                .f-b-btn:hover{
+                    background-color: #0d170a;
+                    border: none;
+                    color: #ffffff;
+          
+                }
+            }
+        }
+
+        .f-features-div{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            text-align: left;
+
+            .f-table{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .f-table-content{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                }
+            }
+        }
+
+        .f-contact{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            
+            .input-div{
+                max-width: 450px;
+                border: 1px solid #0d170a;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                input{
+                    height: 50px;
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                }
+                button{
+                    border-radius: 100%;
+                    width: 40px;
+                    height: 40px;
+                    border: none;
+                    outline: none;
+                }
+            }
+            .f-icon{
+                font-size: 30px;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .rights{
+        background-color: #0bb791;
+        // height: 30px;
+        padding: 10px 15px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+
+        .f-r-span{
+            font-size: 12px;
+            color: #000000;
+            text-decoration: none;
+        }
+        .r-a-div{
+            display: flex;
+            gap: 13px;
+        }
+    }
+}
+
+@media (max-width:900px){
+    .footer{
+        .f-footer-lg{
+            display: none;
+        }
+        .f-foooter-sm{
+            display: flex;
+            flex-direction: column;
+            padding: 2% 1%;
+            gap: 25px;
+
+            .coll{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .f-header{
+                font-weight: 600;
+                font-size: 13px;
+                color: #000000;
+                opacity: 9;
+                filter: brightness(1.2);
+            }
+            .f-table-span{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                opacity: .6;
+                color: #000000;
+            }
+    
+    
+
+            .f-col{
+                display: flex;
+                justify-content: space-between;
+
+                .f-btn-div{
+                    display: flex;
+                    flex-direction: column;
+                    width: 70%;
+                    gap: 15px;
+                    .logo{
+                        width: 150px;
+                    }
+                    .f-header{
+                        font-weight: 600;
+                        font-size: 13px;
+                        color: #000000;
+                        opacity: 9;
+                        filter: brightness(1.2);
+                    }
+                    .f-b-btn-div{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 7px;  
+                        
+                        .f-b-btn{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            background: transparent;
+                            border: 1px solid rgba(255, 255, 255, 0.07);
+                            padding: 5px;
+                            font-weight: bold;
+                            font-size: 17px;
+                            border-radius: 12px;
+                            color: #222121;
+                            cursor: pointer;
+                            width: 150px;
+                        }
+                        .f-b-btn:hover{
+                            color: #35b94c;
+                            box-shadow: 0 4px 10px rgba(53,184,114,.25);
+                        }
+                    }
+        
+                }
+                .f-table{
+                    display: flex;
+                    flex-direction: column;
+
+                    .f-table-content{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+
+        .rights{ 
+            flex-direction: column;
+        }
+    }
+}
