@@ -1,4 +1,4 @@
-import "./geg.css";
+import "./geg.scss";
 import dimo2 from "./img/Stock-Exchange_1.png";
 import trimo1 from "./img/opl.png";
 import trimo2 from "./img/start-trading-2.png";
@@ -31,7 +31,7 @@ export default function About() {
         </div>
         <div className="about_us__desires-container">
           <div>
-            <img src={dimo2} alt="desire" />
+            <img className="desire-img" src={dimo2} alt="desire" />
           </div>
 
           <div className="about_us__desires" dir="auto">
@@ -64,14 +64,7 @@ export default function About() {
           >
             What Sets Us Apart
           </h2>
-          <div
-            class="about_us__modern-items"
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(2, 1fr)",
-              gap: "1rem",
-            }}
-          >
+          <div class="about_us__modern-items">
             <p
               class="about_us__modern-item"
               dir="auto"
@@ -127,7 +120,7 @@ export default function About() {
           <p class="main__start-subtitle">3 steps</p>
           <div class="main__start-steps">
             <div class="main__start-step">
-              <img src={trimo1} alt="about-us" />
+              <img src={trimo1} className="start-img" alt="about-us" />
               <div class="main__start-step__title">Sign up</div>
               <div class="main__start-step__text">
                 Open an account for free in just a few minutes{" "}
@@ -138,6 +131,7 @@ export default function About() {
             </div>
             <div class="main__start-step">
               <img
+                className="start-img"
                 src={trimo2}
                 alt="about-us"
                 srcset="img/start-trading-2%402x.png 2x, img/start-trading-2%403x.png 3x"
@@ -158,6 +152,7 @@ export default function About() {
                 src={require("./img/start-trading-3.png")}
                 alt="about-us"
                 srcset={require("./img/start-trading-3@2x.png")}
+                className="start-img"
               />
               <div class="main__start-step__title">Deposit and trade</div>
               <div class="main__start-step__text">
@@ -179,7 +174,7 @@ export default function About() {
           />
 
           <h2 class="main__innovation-title">
-            RDStockTrade: Innovation Platform
+            Avtroncrest: Innovation Platform
             <br /> Digital Asset Trading
           </h2>
 

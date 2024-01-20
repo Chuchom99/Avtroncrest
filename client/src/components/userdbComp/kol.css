@@ -1,0 +1,50 @@
+
+.stock-logo-holder {
+    text-align: center;
+    margin-top: 1rem;
+}
+.stock-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 27px;
+    text-align: center;
+}
+.page-title-box {
+    padding: 24px 0;
+    display: flex;
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+}
+ .page-title {
+    font-size: 20px;
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+}
+.breadcrumb {
+    font-size: 12px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-family: "Roboto",sans-serif;
+    padding: 2px 0;
+    background-color: transparent;
+}
+.breadcrumb-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.btn-sm, .btn-group-sm>.btn {
+    padding: 0.25rem 0.5rem;
+    font-size: .9rem;
+    /* line-height: 1.8; */
+    border-radius: 0.2rem;
+}
+
+@media (max-width: 768px) {
+    .puol{
+        width: 50%;
+    }
+}

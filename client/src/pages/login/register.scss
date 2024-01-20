@@ -1,0 +1,133 @@
+.regist {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  padding: 15px 0;
+
+  .cad {
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 10px;
+    min-height: 600px;
+    overflow: hidden;
+
+    .left {
+      flex: 1;
+      background: #fafafa;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: #000000;
+      border: 1px solid #0bb791;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+
+      img {
+        width: 250px;
+      }
+
+      p {
+        font-size: 17px;
+        font-weight: 500;
+        color: #000000;
+
+      }
+
+      span {
+        font-size: 14px;
+      }
+
+      button {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        background-color: #0bb791;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+
+    .right {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+      background: #0bb791;
+
+      h1 {
+        color: #ffffff;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        input {
+          border: none;
+          padding: 20px 10px;
+          outline: none;
+          resize: none;          
+        }
+        select {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          padding: 20px 10px;
+        }
+        .show-btn {
+          width: 15%;
+          background: #fff;
+          border: none;
+          resize: none;
+          outline: none;
+          border-radius: 0;
+          border-bottom: 1px solid lightgray;
+        }
+
+        button {
+          cursor: pointer;
+          background: transparent;
+          padding: 10px;
+          border: none;
+          outline: none;
+          resize: none;
+          font-weight: 500;
+          color: #ffffff;
+          font-size: 17px;
+          text-align: left;
+          border: 1px solid #ffffff;
+          border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(53, 68, 184, 0.01);
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1010px) {
+  .regist {
+    height: 100%;
+    padding: 0;
+
+    .cad {
+      flex-direction: column-reverse;
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+
+      .left,
+      .right {
+        padding: 30px;
+      }
+    }
+  }
+}

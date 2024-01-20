@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import bannerVideo from "../../assets/bnvideo.mp4";
 import visa from "../../assets/visa.svg";
@@ -21,7 +21,7 @@ import forex from "../../assets/forex.jpg";
 import Diversity1Icon from "@mui/icons-material/Diversity1";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
-import { Button } from "bootstrap";
+// import { Button } from "bootstrap";
 
 const Home = () => {
   const [tab, setSelectedTab] = useState("standard");
@@ -39,9 +39,11 @@ const Home = () => {
             affordable.
           </span>
           <span className="banner-btns-span">
-            <button className="banner-btns">
-              Signup <ExitToAppIcon />{" "}
-            </button>
+            <Link to="/register">
+              <button className="banner-btns">
+                Signup <ExitToAppIcon />{" "}
+              </button>
+            </Link>
             <button className="banner-btns demo">
               {" "}
               Demo <OndemandVideoIcon />
@@ -111,20 +113,19 @@ const Home = () => {
           <div className="first">
             <span className="heading">Advanced Trading</span>
             <span className="cnt">
-              Ready to dive into the world of stocks? Join Peach Copy Trading
+              Ready to dive into the world of stocks? Join  Avtroncrest
               today and embark on an exciting journey toward financial success.
               Sign up now and gain access to a world of opportunities. With our
               user-friendly platform, expert analysis, and educational
               resources, you'll have the tools you need to take control of your
               financial future. Whether you're looking to grow your investment
               portfolio, plan for retirement, or simply learn more about the
-              stock market, Peach Copy Trading is here to support you every step
-              of the way.
+              stock market, Avtroncrest is here to support you every step of the
+              way.
             </span>
             <span className="cnt">
-              Peach Copy Trading is regulated by the Seychelles Financial
-              Services Authority (FSA) with Securities Dealer’s license number
-              SD018
+              Avtroncrest is regulated by the Seychelles Financial Services
+              Authority (FSA) with Securities Dealer’s license number SD018
             </span>
             <button className="advanced-Trading-btn">
               Certificate of incorporation
@@ -144,12 +145,12 @@ const Home = () => {
             <div className="bottom">
               <span className="heading">Stock trading</span>
               <span className="cnt">
-                Unlock the potential of the stock market with Peach Copy
-                Trading. Whether you're a seasoned investor or a beginner, our
-                platform offers a diverse selection of stocks from major
-                exchanges worldwide. Stay informed with real-time data, conduct
-                in-depth research, and make informed investment decisions. Build
-                a well-rounded portfolio and capitalize on market opportunities.
+                Unlock the potential of the stock market with Avtroncrest.
+                Whether you're a seasoned investor or a beginner, our platform
+                offers a diverse selection of stocks from major exchanges
+                worldwide. Stay informed with real-time data, conduct in-depth
+                research, and make informed investment decisions. Build a
+                well-rounded portfolio and capitalize on market opportunities.
               </span>
 
               <button className="learn-more-btn">Learn more</button>
@@ -161,12 +162,12 @@ const Home = () => {
               <span className="heading">Forex Trading</span>
               <span className="cnt">
                 Experience the largest financial market in the world with forex
-                trading at Peach Copy Trading. Trade major, minor, and exotic
-                currency pairs, and take advantage of the 24/5 market hours.
-                Leverage our advanced trading platform, access real-time data,
-                and utilize our educational resources to enhance your forex
-                trading skills. Seize global currency opportunities and
-                potentially profit from exchange rate fluctuations.
+                trading at Avtroncrest. Trade major, minor, and exotic currency
+                pairs, and take advantage of the 24/5 market hours. Leverage our
+                advanced trading platform, access real-time data, and utilize
+                our educational resources to enhance your forex trading skills.
+                Seize global currency opportunities and potentially profit from
+                exchange rate fluctuations.
               </span>
 
               <button className="learn-more-btn">Learn more</button>
@@ -177,12 +178,12 @@ const Home = () => {
             <div className="bottom">
               <span className="heading">Futures Trading</span>
               <span className="cnt">
-                Dive into the exciting world of futures trading at Peach Copy
-                Trading. Trade contracts on various commodities, indices, and
-                currencies, and take advantage of market volatility and price
-                movements to potentially generate profits. With our advanced
-                trading tools and comprehensive market analysis, you'll have the
-                resources to navigate the futures market with confidence.
+                Dive into the exciting world of futures trading at Avtroncrest.
+                Trade contracts on various commodities, indices, and currencies,
+                and take advantage of market volatility and price movements to
+                potentially generate profits. With our advanced trading tools
+                and comprehensive market analysis, you'll have the resources to
+                navigate the futures market with confidence.
               </span>
 
               <button className="learn-more-btn">Learn more</button>
@@ -196,7 +197,7 @@ const Home = () => {
               <span className="heading">Oil and Gas Stock Trading</span>
               <span className="cnt">
                 Explore the dynamic energy sector with oil and gas stock trading
-                at Peach Copy Trading. Trade stocks of major industry players,
+                at Avtroncrest. Trade stocks of major industry players,
                 exploration companies, and service providers. Stay updated with
                 market insights, industry trends, and expert analysis to make
                 informed trading decisions. Take advantage of the potential
@@ -273,14 +274,14 @@ const Home = () => {
               </span>
               <span className="head">Educational Resources</span>
               <span className="cnt">
-                Knowledge is power, especially in the stock market. Peach Copy
-                Trading offers a wealth of educational resources to empower you
-                with the information you need to make sound investment
-                decisions. Explore our extensive library of articles, tutorials,
-                and videos to expand your understanding of the market and
-                trading strategies. From the basics of stock trading to advanced
-                concepts like options and futures, we cover a wide range of
-                topics to cater to traders at every level.
+                Knowledge is power, especially in the stock market. Avtroncrest
+                offers a wealth of educational resources to empower you with the
+                information you need to make sound investment decisions. Explore
+                our extensive library of articles, tutorials, and videos to
+                expand your understanding of the market and trading strategies.
+                From the basics of stock trading to advanced concepts like
+                options and futures, we cover a wide range of topics to cater to
+                traders at every level.
               </span>
             </div>
           </div>
@@ -424,7 +425,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex" style={{marginTop: "10px"}} >
+              <div className="flex" style={{ marginTop: "10px" }}>
                 <div className="packages">
                   <span className="head">BASIC CHEMBERS</span>
 

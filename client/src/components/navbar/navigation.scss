@@ -3,7 +3,7 @@
   background: #ffffff;
   display: flex;
   align-items: center;
-  
+
   justify-content: space-between;
   padding: 1% 5%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -22,13 +22,11 @@
     background-color: transparent;
     border: none;
     margin-top: 5%;
-    
-    
   }
   .dropdown-menu {
-    background-color: transparent;
+    border: none;
+    background-color: #fff;
   }
-
   a {
     font-size: 14px;
     line-height: 20px;
@@ -45,7 +43,6 @@
 
   .flex {
     display: flex;
-    
   }
   .first {
     gap: 23px;
@@ -53,7 +50,6 @@
     .nav-links {
       gap: 25px;
       align-items: center;
-      
     }
   }
 
@@ -105,11 +101,20 @@
       padding: 10px;
       gap: 8px;
       position: absolute;
-      top: 60px;
+      top: 67px;
       z-index: 1;
       right: 0;
-      background: rgb(5, 20, 35);
+      background: #0b533e;
       width: 215px;
+
+      .dropdown-menu {
+        border: none;
+        background-color: #fff;
+      }
+
+      .nav-link {
+        color: #ffffff;
+      }
 
       .btn-secondary {
         margin-left: -10px;

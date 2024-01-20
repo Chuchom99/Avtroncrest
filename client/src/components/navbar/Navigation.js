@@ -36,12 +36,9 @@ const Navigation = () => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="/futures">Futures Trading</Dropdown.Item>
-              <Dropdown.Item href="/stock">Stock Trading</Dropdown.Item>
-              <Dropdown.Item href="/forex">Forex Trading</Dropdown.Item>
-              <Dropdown.Item href="/commodites">
-                Commodity stock Trading
-              </Dropdown.Item>
+              <Dropdown.Item href="/copy-trading">Options copy trading</Dropdown.Item>
+              <Dropdown.Item href="/advanced-trading">Advanced trading account above PDT</Dropdown.Item>
+              <Dropdown.Item href="/live-trading">Live trading interface</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
 
@@ -55,10 +52,10 @@ const Navigation = () => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="/futures">Futures Trading</Dropdown.Item>
-              <Dropdown.Item href="/stock">Stock Trading</Dropdown.Item>
               <Dropdown.Item href="/forex">Forex Trading</Dropdown.Item>
-              <Dropdown.Item href="/commodites">
+              <Dropdown.Item href="/stock">Stock Trading</Dropdown.Item>
+              <Dropdown.Item href="/futures">Futures Trading</Dropdown.Item>
+              <Dropdown.Item href="/commodity-stock">
                 Commodity stock Trading
               </Dropdown.Item>
             </Dropdown.Menu>
@@ -72,7 +69,7 @@ const Navigation = () => {
 
           <span className="nav-link">
             {" "}
-            <Link to="/about-us">Software</Link>{" "}
+            <Link to="/software">Software</Link>{" "}
           </span>
         </div>
       </div>
@@ -86,29 +83,30 @@ const Navigation = () => {
         <div className="">
           <button onClick={toggleDropdown} className="mn-btn d-lg-none">
             {" "}
-            <MenuIcon />{" "}
+            <MenuIcon style={{color: "#000"}} />{" "}
           </button>
           {isDropdownOpen && (
             <div className="nav-links coll">
               <span className="nav-link">
                 {" "}
-                <Link to="/about-us">About us</Link>{" "}
+                <Link style={{color: "#fff"}} to="/about-us">About us</Link>{" "}
               </span>
-              <Dropdown data-bs-theme="dark">
+              <Dropdown data-bs-theme="light"
+              // style={{height: "100%"}}
+              >
                 <Dropdown.Toggle
                   id="dropdown-button-dark-example1"
                   variant="secondary"
+                  className="nav-link"
+                  style={{marginLeft: ".5px"}}
                 >
                   Mirror Trading
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="/futures">Futures Trading</Dropdown.Item>
-                  <Dropdown.Item href="/stock">Stock Trading</Dropdown.Item>
-                  <Dropdown.Item href="/forex">Forex Trading</Dropdown.Item>
-                  <Dropdown.Item href="/commodites">
-                    Commodity stock Trading
-                  </Dropdown.Item>
+                  <Dropdown.Item href="/copy-trading">Options copy trading</Dropdown.Item>
+                  <Dropdown.Item href="/advanced-trading">Advanced trading account above PDT</Dropdown.Item>
+                  <Dropdown.Item href="/live-trading">Live trading interface</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
 
@@ -116,6 +114,8 @@ const Navigation = () => {
                 <Dropdown.Toggle
                   id="dropdown-button-dark-example1"
                   variant="secondary"
+                  className="nav-link"
+                  style={{marginLeft: ".5px"}}
                 >
                   Trading Categories
                 </Dropdown.Toggle>

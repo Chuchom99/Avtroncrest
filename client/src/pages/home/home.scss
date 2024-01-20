@@ -1,6 +1,5 @@
 .home {
   background: #ffffff;
-  // color: #000000;
 
   .banner {
     background: #0bb791;
@@ -275,18 +274,18 @@
       width: 60%;
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 20px;
 
       .head1 {
         line-height: 1.2;
-        font-size: 50px;
+        font-size: 40px;
         text-align: unset;
         font-style: normal;
         font-weight: 900;
         font-family: "League Spartan", sans-serif;
       }
       .cnt {
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
 
       .flex {
@@ -305,6 +304,7 @@
           }
           .head {
             font-weight: bold;
+            font-size: 19px;
           }
         }
       }
@@ -458,5 +458,220 @@
       font-weight: 600;
       font-family: "League Spartan", sans-serif;
     }
+  }
+}
+
+@media (max-width: 900px) {
+  .home {
+    .banner {
+      flex-direction: column;
+      padding: 2%;
+
+      .first {
+        padding: 5% 5% 8%;
+
+        .head {
+          font-size: 40px;
+        }
+        .banner-btns-span {
+          .banner-btns {
+            padding: 10px;
+            font-size: 17px;
+            text-align: center;
+          }
+        }
+      }
+
+      .sec {
+        border-radius: 16px;
+        overflow: hidden;
+
+        video {
+          border-radius: 5px;
+          max-height: 100%;
+        }
+      }
+    }
+
+    .brands-parent {
+      .brands {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+
+        .brand-logos {
+          width: calc(20% - 15px);
+        }
+      }
+    }
+
+    .trading-steps {
+      flex-direction: column;
+      gap: 60px;
+
+      .sec {
+        align-items: center;
+        .top {
+          font-size: 33px;
+        }
+
+        .bottom {
+          flex-direction: column;
+          gap: 40px;
+
+          .steps {
+            align-items: center;
+            text-align: center;
+
+            .icon {
+              color: #0bb791;
+              font-size: 35px;
+            }
+            .heading {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    .advanced-Trading-parent {
+      .advanced-Trading {
+        flex-direction: column;
+
+        .first {
+          flex-direction: column;
+
+          .heading {
+            font-size: 33px;
+          }
+
+          .cnt {
+            font-weight: 300;
+            font-size: 17px;
+          }
+        }
+        .sec {
+          .ad-stocks {
+            height: 600px;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    .products {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 5% 5% 2%;
+      background: #fefbf5;
+
+      .product-flex {
+        flex-direction: column;
+        gap: 20px;
+
+        .product-box {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          background: #0bb791;
+          border-radius: 8px;
+
+          .bottom {
+            align-items: center;
+            text-align: center;
+            padding: 20px 7px;
+          }
+        }
+      }
+    }
+
+    .features {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 2%;
+
+      .first {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .head1 {
+          font-size: 33px;
+        }
+        .cnt {
+          font-size: 1.1rem;
+          font-weight: 300;
+        }
+
+        .flex {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .feature {
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            text-align: center;
+
+            .icon {
+              font-size: 40px;
+              color: #0bb791;
+            }
+            .head {
+              font-weight: bold;
+              font-size: 19px;
+            }
+            .cnt {
+              font-weight: 300;
+              font-size: 17px;
+            }
+          }
+        }
+      }
+      .sec {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .secured-img {
+        }
+      }
+    }
+
+    .tab {
+      .flex {
+        .packages {
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+
+    .final {
+      text-align: center;
+  
+      .head {
+        font-size: 33px;
+      }
+      .cnt {
+        font-size: 17px;
+        font-weight: 300;
+      }
+      .users {
+        color: #d4b68a;
+        line-height: 1.2;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+      }
+      .reg {
+        font-size: 30px;
+      }
+    }
+  
   }
 }
