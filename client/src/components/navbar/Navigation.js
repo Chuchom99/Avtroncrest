@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navigation.scss";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logoo.png";
 import Dropdown from "react-bootstrap/Dropdown";
 import MenuIcon from "@mui/icons-material/Menu";
+
 
 const Navigation = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);

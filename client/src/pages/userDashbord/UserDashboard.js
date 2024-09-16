@@ -2,7 +2,7 @@ import Button from "react-bootstrap/Button";
 import Collapse from "react-bootstrap/Collapse";
 import MenuIcon from "@mui/icons-material/Menu";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logoo.png";
 import SecurityIcon from "@mui/icons-material/Security";
 import gif from "../../assets/trade-icc.gif";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";

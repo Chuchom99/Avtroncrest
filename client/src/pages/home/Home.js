@@ -34,8 +34,8 @@ const Home = () => {
             Investing and building for a secured future
           </span>
           <span className="cnt">
-            Avtroncrest is the easiest way to access smarter investment options
-            and earn real returns. We make investing simple, accessible and
+            Xstock is the easiest way to access smarter investment options and
+            earn real returns. We make investing simple, accessible and
             affordable.
           </span>
           <span className="banner-btns-span">
@@ -113,19 +113,18 @@ const Home = () => {
           <div className="first">
             <span className="heading">Advanced Trading</span>
             <span className="cnt">
-              Ready to dive into the world of stocks? Join  Avtroncrest
-              today and embark on an exciting journey toward financial success.
-              Sign up now and gain access to a world of opportunities. With our
+              Ready to dive into the world of stocks? Join Xstock today and
+              embark on an exciting journey toward financial success. Sign up
+              now and gain access to a world of opportunities. With our
               user-friendly platform, expert analysis, and educational
               resources, you'll have the tools you need to take control of your
               financial future. Whether you're looking to grow your investment
               portfolio, plan for retirement, or simply learn more about the
-              stock market, Avtroncrest is here to support you every step of the
-              way.
+              stock market, Xstock is here to support you every step of the way.
             </span>
             <span className="cnt">
-              Avtroncrest is regulated by the Seychelles Financial Services
-              Authority (FSA) with Securities Dealer’s license number SD018
+              Xstock is regulated by the Seychelles Financial Services Authority
+              (FSA) with Securities Dealer’s license number SD018
             </span>
             <button className="advanced-Trading-btn">
               Certificate of incorporation
@@ -145,12 +144,12 @@ const Home = () => {
             <div className="bottom">
               <span className="heading">Stock trading</span>
               <span className="cnt">
-                Unlock the potential of the stock market with Avtroncrest.
-                Whether you're a seasoned investor or a beginner, our platform
-                offers a diverse selection of stocks from major exchanges
-                worldwide. Stay informed with real-time data, conduct in-depth
-                research, and make informed investment decisions. Build a
-                well-rounded portfolio and capitalize on market opportunities.
+                Unlock the potential of the stock market with Xstock. Whether
+                you're a seasoned investor or a beginner, our platform offers a
+                diverse selection of stocks from major exchanges worldwide. Stay
+                informed with real-time data, conduct in-depth research, and
+                make informed investment decisions. Build a well-rounded
+                portfolio and capitalize on market opportunities.
               </span>
 
               <button className="learn-more-btn">Learn more</button>
@@ -162,7 +161,7 @@ const Home = () => {
               <span className="heading">Forex Trading</span>
               <span className="cnt">
                 Experience the largest financial market in the world with forex
-                trading at Avtroncrest. Trade major, minor, and exotic currency
+                trading at Xstock. Trade major, minor, and exotic currency
                 pairs, and take advantage of the 24/5 market hours. Leverage our
                 advanced trading platform, access real-time data, and utilize
                 our educational resources to enhance your forex trading skills.
@@ -178,9 +177,9 @@ const Home = () => {
             <div className="bottom">
               <span className="heading">Futures Trading</span>
               <span className="cnt">
-                Dive into the exciting world of futures trading at Avtroncrest.
-                Trade contracts on various commodities, indices, and currencies,
-                and take advantage of market volatility and price movements to
+                Dive into the exciting world of futures trading at Xstock. Trade
+                contracts on various commodities, indices, and currencies, and
+                take advantage of market volatility and price movements to
                 potentially generate profits. With our advanced trading tools
                 and comprehensive market analysis, you'll have the resources to
                 navigate the futures market with confidence.
@@ -197,11 +196,11 @@ const Home = () => {
               <span className="heading">Oil and Gas Stock Trading</span>
               <span className="cnt">
                 Explore the dynamic energy sector with oil and gas stock trading
-                at Avtroncrest. Trade stocks of major industry players,
-                exploration companies, and service providers. Stay updated with
-                market insights, industry trends, and expert analysis to make
-                informed trading decisions. Take advantage of the potential
-                growth and volatility in the oil and gas industry.
+                at Xstock. Trade stocks of major industry players, exploration
+                companies, and service providers. Stay updated with market
+                insights, industry trends, and expert analysis to make informed
+                trading decisions. Take advantage of the potential growth and
+                volatility in the oil and gas industry.
               </span>
 
               <button className="learn-more-btn">Learn more</button>
@@ -274,7 +273,7 @@ const Home = () => {
               </span>
               <span className="head">Educational Resources</span>
               <span className="cnt">
-                Knowledge is power, especially in the stock market. Avtroncrest
+                Knowledge is power, especially in the stock market. Xstock
                 offers a wealth of educational resources to empower you with the
                 information you need to make sound investment decisions. Explore
                 our extensive library of articles, tutorials, and videos to
@@ -285,38 +284,6 @@ const Home = () => {
               </span>
             </div>
           </div>
-          {/* <div className="flex">
-            <div className="feature">
-              <span>
-                <Diversity1Icon className="icon" />
-              </span>
-              <span className="head">User-Friendly Trading Platform</span>
-              <span className="cnt">
-                We understand that simplicity and ease of use are paramount when
-                it comes to trading. Our intuitive trading platform is designed
-                to cater to traders of all levels, offering a seamless
-                experience with robust features. From placing trades to tracking
-                your portfolio, everything is just a few clicks away. Our
-                platform is optimized for both desktop and mobile devices,
-                ensuring that you can trade anytime, anywhere.
-              </span>
-            </div>
-            <div className="feature">
-              <span>
-                <Diversity1Icon className="icon" />
-              </span>
-              <span className="head">User-Friendly Trading Platform</span>
-              <span className="cnt">
-                We understand that simplicity and ease of use are paramount when
-                it comes to trading. Our intuitive trading platform is designed
-                to cater to traders of all levels, offering a seamless
-                experience with robust features. From placing trades to tracking
-                your portfolio, everything is just a few clicks away. Our
-                platform is optimized for both desktop and mobile devices,
-                ensuring that you can trade anytime, anywhere.
-              </span>
-            </div>
-          </div> */}
         </div>
         <div className="sec">
           <img src={secured} className="secured-img" alt="" />

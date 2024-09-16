@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logoo.png";
 import "./register.scss";
 import { AuthContext } from "../../authcontext/authContext";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
@@ -8,6 +8,7 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 
 
 const Login = () => {
+  
   const [inputs, setInputs] = useState({
     username: "",
     password: "",
@@ -21,15 +22,37 @@ const Login = () => {
   };
   const { login } = useContext(AuthContext);
 
+  // const handleLogin = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     await login(inputs);
+  //     navigate("/dashboard");
+  //   } catch (err) {
+  //     setErr(err.response.data);
+  //   }
+  // };
   const handleLogin = async (e) => {
-    e.preventDefault();
-    try {
-      await login(inputs);
-      navigate("/dashboard");
-    } catch (err) {
-      setErr(err.response.data);
+  e.preventDefault();
+  try {
+    await login(inputs);
+    navigate("/dashboard");
+  } catch (error) {
+    if (error.response) {
+      // The request was made and the server responded with a status code
+      // that falls out of the range of 2xx
+      setErr(error.response.data); // Set error message from server response
+    } else if (error.request) {
+      // The request was made but no response was received
+      console.error('No response received:', error.request);
+      setErr('No response received from server.');
+    } else {
+      // Something happened in setting up the request that triggered an Error
+      console.error('Error during request setup:', error.message);
+      setErr('Error during request setup. Please try again later.');
     }
-  };
+  }
+};
+
   const [showPassword, setShowPassword] = useState(false);
   const handleTogglePassword = () => {
     setShowPassword(!showPassword);
@@ -77,6 +100,7 @@ const Login = () => {
                 className="show-btn"
                 type="button"
                 onClick={handleTogglePassword}
+                style={{ color: "#000" }}
               >
                 {showPassword ? <VisibilityOffIcon /> : <VisibilityIcon />}
               </button>

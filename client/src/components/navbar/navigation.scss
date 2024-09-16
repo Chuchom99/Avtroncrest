@@ -5,7 +5,7 @@
   align-items: center;
 
   justify-content: space-between;
-  padding: 1% 5%;
+  padding: .5% 5%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   position: sticky;
   z-index: 100;
@@ -38,7 +38,8 @@
   }
 
   .brand-logo {
-    width: 200px;
+    // width: 200px;
+    max-height: 70px;
   }
 
   .flex {
@@ -106,6 +107,7 @@
       right: 0;
       background: #0b533e;
       width: 215px;
+      
 
       .dropdown-menu {
         border: none;
